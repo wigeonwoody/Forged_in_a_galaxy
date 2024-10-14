@@ -7,18 +7,18 @@ I did a terrible job keeping track earlier, here are the files that you should c
 ### v0.1
 - Updated README.md
 - Upgraded plugins to latest version (Dataview, Templater, Inline Scripts)
+- Changed to a standard structure
+- Updated script references to (Characters->1.2_Character, Progress->1.3_Progress, Clocks->1.4_Clocks, Assets->6_Assets, Moves->5_Moves)
+- Implemented "Failures" track
 - 
 
 
 # How to Use...
 Use the Table4One vault as a starting point for playing Ironsworn: Starforged with Obsidian and ChatGPT.
 
-#### To get a copy of the vault...
-`$ git clone https://github.com/wigeonwoody/Table4One.git`
 
-#### To check in changes to the vault...
-`$ git add . -u`
-`$ git commit -m "Your comment here."`
+## Modifying Table4one
+
 
 
 ## Fonts

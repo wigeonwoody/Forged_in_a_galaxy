@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "Templates",
+  "templates_folder": "z_Templates",
   "templates_pairs": [
     [
       "",
@@ -15,19 +15,27 @@
   "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "Progress",
-      "template": "Templates/Progress_Template.md"
+      "folder": "1.3_Progress",
+      "template": "z_Templates/Progress_Template.md"
     },
     {
-      "folder": "Characters",
-      "template": "Templates/Character_Template.md"
+      "folder": "1.2_Character",
+      "template": "z_Templates/Character_Template.md"
     },
     {
-      "folder": "Clocks",
-      "template": "Templates/Clocks_Template.md"
+      "folder": "1.4_Clocks",
+      "template": "z_Templates/Clocks_Template.md"
+    }
+  ],
+  "enable_file_templates": false,
+  "file_templates": [
+    {
+      "regex": ".*",
+      "template": ""
     }
   ],
   "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
     ""
   ],
