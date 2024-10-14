@@ -4,44 +4,21 @@ Welcome to my Starforged Starter Vault!  I set this up to play Starforged in a w
 ## Change Log
 I did a terrible job keeping track earlier, here are the files that you should change to get everything working to v1.5 and beyond.
 
-### v1.5.5
-* Added the <font color="red">StarsmithAssets.JSON</font> file in the main folder which has all the Starsmith: Assets and Starsmith: Mecha Mercs assets in it.
-* Fixed a typo in the README file
-
-### v1.5.4
-* Updated <font color="red">README.md</font>
-* Updated <font color="red">starforged_stats.sfile.md</font> and <font color="red">starforged_moves.sfile.md</font>
-* Added Starsmith: Mecha Mercs material in <font color="red">Mech</font> and <font color="red">Mech_Module</font> folders inside the Asset folder.
-* Added all Starsmith: Assets including <font color="red">Crew Member, Flash Fox, Furball, Nano-Swarm, Waterwyrm</font> in the Companion folder, <font color="red">Immortal Coil, Indefatigable, Soulless, Traveler</font> in the Deed folder, <font color="red">Aeroponics, Armory, Drones, External Refit, Holodeck, Stabiliziers, Tractor Beam, Mech Printer</font> in the Module folder, <font color="red">Constable, Cosmic Constructor, Enhanced, Linguist, Logistician, Precog, Psionic, Quantum Tunneler, Rebel, Rocketeer, Scientist, Security Guard, Telepath, Voidshifter, Wealth Management, Well-Connected</font> in the Path folder, and <font color="red">Aquatic HOV</font> in the Support_Vehicle folder.
-
-### v1.5.3
-* Updated <font color="red">README.md</font>
-* Updated <font color="red">starforged_progress.sfile.md</font>, <font color="red">starforged_stats.sfile.md</font>, and <font color="red">starforged_moves.sfile.md</font> in Support/inline Scripts folder to fix a bug in the RegEx for the move command and a bug where it grabbed the first created character by default rather than the first listed alphabetically.
-
-### v1.5.2
-* Updated <font color="red">README.md</font>
-* Updated <font color="red">starforged_progress.sfile.md</font>, <font color="red">starforged_stats.sfile.md</font>, and <font color="red">starforged_moves.sfile.md</font> in Support/inline Scripts folder which fixed Withstand Damage, fixed a bug of 0 values in frontmatter returning NULL instead of 0, altered Burn Momentum to give max and reset value on return, and added in new shortcuts of Stat Check, Auto Strong Hit, Auto Weak Hit, Auto Miss, and Roll for generic die rolls like 1d100 or 3d6.  See documented shortcuts below.
-* <b>Note:</b> For <u>Withstand Damage</u> on your command vehicle or when suffer/take integrity for your command vehicle, you can refer to the asset as "<font color="orange">cv</font>" instead of "Starship" if you want.
-
-### v1.5.1
-* Updated <font color="red">README.md</font>
-* Updated <font color="red">starforged_progress.sfile.md</font> in the Support/inlineScripts folder
-- Updated <font color="red">snippets.css</font> in the .obsidian/snippets folder to get the icon for the new Clocks folder
-- Added the new <font color="red">Clocks folder</font> with Clocks1.md inside as a demo
-- Added <font color="red">Clocks_Template</font> to the Templates folder
-- Updated the <font color="red">data.json</font> file in .obsidian/plugins/templater-obsidian folder to account for the new Clocks_Template file
-- Added the <font color="red">ProgressClocks folder</font> to the Images/Shortcut_Images folder which has all the progress clock SVG files
-
-### v1.5
+### v0.1
 - Updated README.md
-- Updated starforged_moves.sfile.md, starforged_stats.sfile.md, starforged_progress.sfile.md in the Support/inlineScripts folder
-- Updated snippets.css in the .obsidian/snippets folder
-- Added Character_Template and Mech_Template files in the Templates folder
-- Optional: Updated data.json in the .obsidian/plugins/templater-obsidian folder to account for the new Character_Template file
-- Removed Vault_Info file from Support folder
-- Renamed Character folder to Characters
-- Removed Bonds, Discoveries, Quests, Stats, Meters, Conditions, and Character_Sheet from the Character folder
-- All player characters now have a single file for their character sheet and stats which should be created using the Character_Template
+- Upgraded plugins to latest version (Dataview, Templater, Inline Scripts)
+- 
+
+
+# How to Use...
+Use the Table4One vault as a starting point for playing Ironsworn: Starforged with Obsidian and ChatGPT.
+
+#### To get a copy of the vault...
+`$ git clone https://github.com/wigeonwoody/Table4One.git`
+
+#### To check in changes to the vault...
+`$ git add . -u`
+`$ git commit -m "Your comment here."`
 
 
 ## Fonts

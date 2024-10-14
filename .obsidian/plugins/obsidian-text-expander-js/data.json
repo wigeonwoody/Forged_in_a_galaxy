@@ -1,5 +1,4 @@
 {
-  "version": "0.24.11",
   "prefix": ";;",
   "suffix": "::",
   "expansionPrefix": "",
@@ -9,6 +8,7 @@
   "autocompleteHelp": true,
   "devMode": false,
   "allowExternal": false,
+  "version": "0.24.12",
   "shortcutFiles": [
     {
       "enabled": true,

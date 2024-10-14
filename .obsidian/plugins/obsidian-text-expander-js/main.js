@@ -7614,7 +7614,7 @@ var SettingUi_Alerts = class {
         const shortcutFiles = plugin.settings.shortcutFiles;
         for (const shortcutFile of shortcutFiles) {
           if (shortcutFile.address.endsWith("state.sfile.md")) {
-            versionFilePath = shortcutFile.address.slice(0, 14) + "\u039E_libraryVersion.md";
+            versionFilePath = shortcutFile.address.slice(0, -14) + "\u039E_libraryVersion.md";
             break;
           }
         }
@@ -7925,7 +7925,6 @@ var ShortcutLinks = class {
           })
         );
         if (result) {
-          result = HelperFncs.parseMarkdown(result);
           if (parts.length > 2 && parts[2]) {
             result = new Function("$$", "return " + parts[2])(result);
           }
