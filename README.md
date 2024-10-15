@@ -12,7 +12,7 @@ Welcome to my Starforged Starter Vault!  I set this up to play Starforged in a w
 - [ ] https://web.archive.org/web/20120917234510/http://bitdrift.com/post/4534738938/fork-your-own-project-on-github
 - [ ] https://help.obsidian.md/Obsidian+Sync/Set+up+Obsidian+Sync
 - [x] Add new plugins: Copilot, Advanced Tables, Git
-- [ ] Create .gitignore file in root
+- [x] Create .gitignore file in root
 - [ ] Create .gitignore files in subdirectories?
 - [ ] 
 

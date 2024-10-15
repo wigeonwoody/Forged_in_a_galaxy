@@ -28,6 +28,9 @@ Discoveries_XPEarned: 0
 Quests_Progress: 0
 Quests_TrackImage: "[[progress-track-0.svg]]"
 Quests_XPEarned: 0
+Failures_Progress: 0
+Failures_TrackImage: "[[progress-track-0.svg]]"
+Failures_XPEarned: 0
 ---
 # `=this.Name`
 Maybe image here
@@ -66,6 +69,11 @@ WHERE contains(file.path, this.file.path)
 ### Quests (Rolled Over? `=choice(this.Quests_Progress > 40, "Yes", "No")`)
 ```dataview
 LIST without id embed(link(meta(Quests_TrackImage).path, "350"))
+WHERE contains(file.path, this.file.path)
+```
+### Failures (Rolled Over? `=choice(this.Failures_Progress > 40, "Yes", "No")`)
+```dataview
+LIST without id embed(link(meta(Failures_TrackImage).path, "350"))
 WHERE contains(file.path, this.file.path)
 ```
 ## Vows / Progress Tracks

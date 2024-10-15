@@ -106,10 +106,12 @@ function calcXP(characterFile) {
     var bProg = getVar(characterPath, "Bonds_Progress");
     if (!bProg) { bProg = 0; }
     var dProg = getVar(characterPath, "Discoveries_Progress");
-    if (!dProg) { bProg = 0; }
+    if (!dProg) { dProg = 0; }
     var qProg = getVar(characterPath, "Quests_Progress");
-    if (!qProg) { bProg = 0; }
-    let Progs = [bProg, dProg, qProg];
+    if (!qProg) { qProg = 0; }
+    var fProg = getVar(characterPath, "Failures_Progress"); 
+    if (!fProg) { fProg = 0; }
+    let Progs = [bProg, dProg, qProg, fProg];
     alert(Progs);
     var xpEarned = 0;
     var i = 0;
@@ -130,7 +132,7 @@ __
 __
 ```js
 function getSoloCharacter() {
-    const file = app.vault.fileMap["1.2_Characters];
+    const file = app.vault.fileMap["1.2_Character];
     var charNames = [];
     for (let i = 0; i < file.children.length; i = i + 1) {
         charNames.push(file.children[i].name.replace(".md", ""));
@@ -157,6 +159,7 @@ var characterName = "Character_Name_Here";
 var difficulty = "Epic";
 
 switch (givenTrack) {
+	case "Failures":
     case "Quests":
     case "Bonds":
     case "Discoveries":
@@ -188,7 +191,7 @@ if (progToSet > progMax) {
 expand("notevars set " + trackTitle + " " + progVar + " " + progToSet);
 
 var xpEarned = 0;
-if (givenTrack == "Quests" || givenTrack == "Bonds" || givenTrack == "Discoveries") {
+if (givenTrack == "Failures" || givenTrack == "Quests" || givenTrack == "Bonds" || givenTrack == "Discoveries") {
     if (progToSet > 40) {
         xpEarned = 20 + Math.floor((progToSet - 40)/4);
     } else {
@@ -232,6 +235,7 @@ var characterName = "Character_Name_Here";
 var difficulty = "Epic";
 
 switch (givenTrack) {
+	case "Failures":
     case "Quests":
     case "Bonds":
     case "Discoveries":
@@ -310,6 +314,7 @@ var characterFile = "Character_File_Name_Here";
 var characterName = "Character_Name_Here";
 var difficulty = "Epic";
 switch (givenTrack) {
+	case "Failures":
     case "Quests":
     case "Bonds":
     case "Discoveries":
@@ -391,6 +396,9 @@ expand("notevars set " + characterFile + " Discoveries_XPEarned 0");
 expand("notevars set " + characterFile + " Quests_Progress 0");
 expand("notevars set " + characterFile + " Quests_TrackImage " + trackImage);
 expand("notevars set " + characterFile + " Quests_XPEarned 0");
+expand("notevars set " + characterFile + " Failures_Progress 0");
+expand("notevars set " + characterFile + " Failures_TrackImage " + trackImage);
+expand("notevars set " + characterFile + " Failures_XPEarned 0");
 expand("notevars set " + characterFile + " XPSpent 0");
 
 let callout = "> [!progress]- Legacies Reset for " + characterName + "\n> \n\n";
@@ -410,6 +418,7 @@ var name = "";
 var progVar = "Progress";
 
 switch (givenTrack) {
+	case "Failures":
     case "Quests":
     case "Bonds":
     case "Discoveries":
