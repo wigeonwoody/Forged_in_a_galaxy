@@ -2,30 +2,48 @@
 Welcome to my Starforged Starter Vault!  I set this up to play Starforged in a way that fits me best.
 
 ## Change Log
-I did a terrible job keeping track earlier, here are the files that you should change to get everything working to v1.5 and beyond.
 
 ### v0.1
-- Updated README.md
-- Upgraded plugins to latest version (Dataview, Templater, Inline Scripts)
-- Changed to a standard structure
-- Updated script references to (Characters->1.2_Character, Progress->1.3_Progress, Clocks->1.4_Clocks, Assets->6_Assets, Moves->5_Moves)
-- Implemented "Failures" track
-- 
+- [x] Updated README.md
+- [x] Upgraded plugins to latest version (Dataview, Templater, Inline Scripts)
+- [x] Changed to a standard structure
+- [x] Updated script references to (Characters->1.2_Character, Progress->1.3_Progress, Clocks->1.4_Clocks, Assets->6_Assets, Moves->5_Moves)
+- [ ] Implement "Failures" track
+- [ ] https://web.archive.org/web/20120917234510/http://bitdrift.com/post/4534738938/fork-your-own-project-on-github
+- [ ] https://help.obsidian.md/Obsidian+Sync/Set+up+Obsidian+Sync
+- [x] Add new plugins: Copilot, Advanced Tables, Git
+- [ ] Create .gitignore file in root
+- [ ] Create .gitignore files in subdirectories?
+- [ ] 
 
 
 # How to Use...
 Use the Table4One vault as a starting point for playing Ironsworn: Starforged with Obsidian and ChatGPT.
 
+## Setting up Git for vault backup
+Follow the instructions here...
+- https://publish.obsidian.md/git-doc/Installation
 
 ## Modifying Table4one
+You will need the following tools.
+- Obsidian
+- git
 
-
+How to modify Table4One.
+1. Create a new branch from 'main'. Name it the task you're going to do. (i.e. installing_plugins, adding_Force_attribute, updating_copilot)
+2. Check-out the new branch
+3. Make your changes and test the changes.
+5. Add the files that you have changed to the 'staged' commit.
+6. Commit the changes with a comment.
+7. Push the changes to github.com
+8. Merge the changes into the main branch.
+9. Delete the new branch.
 
 ## Fonts
 For the headings, I'm using [Xolonium font](https://www.fontspace.com/xolonium-font-f17644) and [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) as the interface font.
 
 ## Plugins
-This vault only works with the [Dataview](https://github.com/blacksmithgu/obsidian-dataview), [Templater](https://github.com/SilentVoid13/Templater), and most importantly: [Inline Scripts](https://github.com/jon-heard/obsidian-inline-scripts) plugins.
+This vault only works with the [Dataview](https://github.com/blacksmithgu/obsidian-dataview), [Templater](https://github.com/SilentVoid13/Templater), and most importantly: [Inline Scripts](https://github.com/jon-heard/obsidian-inline-scripts) plugins. I have included Copilot, Git (for backup), and Advanced Tables.
 
 ## CSS Snippet
 The `snippets.css` file contains all the folder icons, color coding of new callout boxes, title and header fonts, fixing the tasks so they don't strike through when marked, and an inversion code so that the SVG files will invert black/white based on light/dark mode.
