@@ -132,7 +132,7 @@ __
 __
 ```js
 function getSoloCharacter() {
-    const file = app.vault.fileMap["1.2_Character];
+    const file = app.vault.fileMap["1.2_Character"];
     var charNames = [];
     for (let i = 0; i < file.children.length; i = i + 1) {
         charNames.push(file.children[i].name.replace(".md", ""));
