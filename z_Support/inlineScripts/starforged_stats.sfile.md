@@ -272,6 +272,7 @@ switch (meter) {
     case "Supply":
     case "Wealth":
     case "Edge":
+    case "Force":
     case "Heart":
     case "Iron":
     case "Shadow":
@@ -339,6 +340,7 @@ switch (meter) {
     case "Supply":
     case "Wealth":
     case "Edge":
+    case "Force":
     case "Heart":
     case "Iron":
     case "Shadow":
@@ -393,6 +395,8 @@ var momentum = getVar("1.2_Character/" + characterFile, "Momentum");
 if (!momentum) { momentum = 0; }
 var edge = getVar("1.2_Character/" + characterFile, "Edge");
 if (!edge) { edge = 0; }
+var force = getVar("1.2_Character/" + characterFile, "Force");
+if (!force) { force = 0; }
 var heart = getVar("1.2_Character/" + characterFile, "Heart");
 if (!heart) { heart = 0; }
 var iron = getVar("1.2_Character/" + characterFile, "Iron");
@@ -401,7 +405,7 @@ var shadow = getVar("1.2_Character/" + characterFile, "Shadow");
 if (!shadow) { shadow = 0; }
 var wits = getVar("1.2_Character/" + characterFile, "Wits");
 if (!wits) { wits = 0; }
-var callout = "> [!mechanics]+ Stat check!" + "\n> Edge: " + edge + "   Heart: " + heart + "   Iron: " + iron + "   Shadow: " + shadow + "   Wits: " + wits + "\n>   Health: " + health + "   Spirit: " + spirit + "   Supply: " + supply + "   Momentum: " + momentum + "   Wealth: " + wealth + "\n\n";
+var callout = "> [!mechanics]+ Stat check!" + "\n> Edge: " + edge + "   Force: " + force + "   Heart: " + heart + "   Iron: " + iron + "   Shadow: " + shadow + "   Wits: " + wits + "\n>   Health: " + health + "   Spirit: " + spirit + "   Supply: " + supply + "   Momentum: " + momentum + "   Wealth: " + wealth + "\n\n";
 return callout;
 ```
 __
