@@ -379,6 +379,7 @@ switch (trueStat) {
     case "Supply":
     case "Wealth":
     case "Edge":
+    case "Force":
     case "Heart":
     case "Iron":
     case "Shadow":

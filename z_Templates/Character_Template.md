@@ -1,6 +1,7 @@
 ---
 Name: Character Name
 Edge: 3
+Force: 0
 Heart: 2
 Iron: 1
 Shadow: 1
@@ -36,9 +37,9 @@ Failures_XPEarned: 0
 Maybe image here
 
 ## Stats
-| Edge | Heart | Iron | Shadow | Wits |
-| --- | --- | --- | --- | --- |
-| `=this.Edge` | `=this.Heart` | `=this.Iron` | `=this.Shadow` | `=this.Wits` |
+| Edge         | Force         | Heart         | Iron         | Shadow         | Wits         |
+| ------------ | ------------- | ------------- | ------------ | -------------- | ------------ |
+| `=this.Edge` | `=this.Force` | `=this.Heart` | `=this.Iron` | `=this.Shadow` | `=this.Wits` |
 
 ## Meters
 | Health | Spirit | Supply | Wealth | Momentum |
