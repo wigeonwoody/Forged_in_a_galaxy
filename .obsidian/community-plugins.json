@@ -1,7 +1,4 @@
 [
   "dataview",
-  "templater-obsidian",
-  "obsidian-text-expander-js",
-  "table-editor-obsidian",
-  "copilot"
+  "obsidian-text-expander-js"
 ]

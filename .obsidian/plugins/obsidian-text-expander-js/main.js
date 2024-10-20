@@ -8406,3 +8406,5 @@ var InlineScriptsPlugin = class extends import_obsidian14.Plugin {
   }
 };
 /*! getEmPixels  | Author: Tyson Matanich (http://matanich.com), 2013 | License: MIT */
+
+/* nosourcemap */

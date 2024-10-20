@@ -268,6 +268,9 @@ switch (anyCase.toUpperCase()) {
     case "MAD":
         moveName = "Make a Discovery";
         break;
+    case "MEDITATE":
+	    moveName = "Meditate";
+	    break;
     case "OD":
         moveName = "Overcome Destruction";
         break;

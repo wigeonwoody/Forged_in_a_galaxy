@@ -1,6 +1,7 @@
 # Meditate
 
 When you ***kneel and reach out to the Force for at least several minutes***, roll +heart. If you are a follower of the dark side, roll +shadow instead. If you score a ***strong hit***, choose two. On a ***weak hit***, choose one. On a ***miss***, you must add +1 conflict or [[Endure_Stress]].
+
 - Take +1 spirit.
 - Take +2 momentum.
 - Take -1 conflict.
